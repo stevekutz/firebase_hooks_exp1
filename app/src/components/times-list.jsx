@@ -8,7 +8,8 @@ function useTimes(){
     useEffect(() => {
         // DON"T FORGET to put in unsubscribe callback
 
-        firebase
+        // firebase
+        const unsubscribe = firebase
             .firestore()
             .collection('times')
             .onSnapshot((snapshot) => {
@@ -18,6 +19,7 @@ function useTimes(){
                 }))
                 setTimes(newTimes);
             })
+        return () => unsubscribe()    
     }, [])
     return times
 }
