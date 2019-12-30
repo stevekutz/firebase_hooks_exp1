@@ -12,13 +12,12 @@ const TimesList = () => {
                     <option> Time [slowest first]</option>
                     <option disabled > --- </option>
                     <option> Title [a-z]</option>
-                    <option> Title [z-a]</option>
-                
-                
+                    <option> Title [z-a]</option>                
                 </select>            
-            
             </div>
-        
+            <ol>
+            
+            </ol>
         
         </div>
     )

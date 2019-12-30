@@ -2,7 +2,7 @@ import React from 'react';
 // import logo from './logo.svg';
 // import './App.css';
 import TimesList from './components/times-list'
-
+import AddTimeEntryForm from './components/add-time-entry-form'
 
 //  => Was added earlier to just test we can connect to database
 // import firebase from './firebase';
@@ -17,6 +17,7 @@ function App() {
     <div className="App">
         <h1>Just Clock It</h1>
         <TimesList/>
+        <AddTimeEntryForm/>
     </div>
   );
 }
