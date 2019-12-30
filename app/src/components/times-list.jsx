@@ -6,6 +6,8 @@ function useTimes(){
     const [times, setTimes] = useState([]);
 
     useEffect(() => {
+        // DON"T FORGET to put in unsubscribe callback
+
         firebase
             .firestore()
             .collection('times')
