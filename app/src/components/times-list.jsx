@@ -1,9 +1,10 @@
 import React, {useEffect} from 'react';
 import {useState} from 'reinspect';
-
+import {List, Select} from 'antd';
 
 import firebase from '../firebase';
 
+const {Option} = Select;
 // use hash for sorting
 const SORT_OPTIONS = {
     "TIME_ASC": {column: 'time_seconds', direction: 'asc'},
@@ -41,7 +42,7 @@ const TimesList = () => {
     const times = useTimes(sortBy);
 
     return (
-        <div>
+        <div style = {{width: '60%', margin: '0 auto'}}>
             <h2> Times List</h2>
             <div>
                 <label> Sort By: </label> {' '}
@@ -53,16 +54,16 @@ const TimesList = () => {
                     <option value = "TITLE_DESC"> Title [z-a]</option>                
                 </select>            
             </div>
-            <ol>
+            <List gutter = {0}>
                 {times.map((time) => 
-                <li key = {time.id}>
+                <List.Item key = {time.id}>
                 <div>
                     {time.title}
                     <code> {time.time_seconds}  seconds</code>
                 </div>
-                </li>        
+                </List.Item>        
                 )}
-            </ol>
+            </List>
         
         </div>
     )

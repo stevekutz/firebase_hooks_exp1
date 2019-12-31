@@ -15,7 +15,7 @@ import AddTimeEntryForm from './components/add-time-entry-form'
 function App() {
   return (
     <div className="App">
-        <h1>Just Clock It</h1>
+        <h1 style = {{textAlign: 'center'}}>Just Clock It</h1>
         <TimesList/>
         <AddTimeEntryForm/>
     </div>
