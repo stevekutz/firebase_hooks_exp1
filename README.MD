@@ -20,7 +20,9 @@ Based upon the `Baylor Breaks It Down` article <a `Firebase Tutorial With React 
         ~~~
         Define a `Wrapper` component and wrap the `App` component 
         ~~~ js
-        const AppWrapper = () => {
+        import {StateInspector} from 'reinspect';
+
+        const WrapApp = () => {
             return (
                 <StateInspector>
                     <App/>
@@ -28,5 +30,5 @@ Based upon the `Baylor Breaks It Down` article <a `Firebase Tutorial With React 
             )
         }
 
-        ReactDOM.render(<AppWrapper />, document.getElementById('root'));
+        ReactDOM.render(<WrapApp />, document.getElementById('root'));
         ~~~ 
