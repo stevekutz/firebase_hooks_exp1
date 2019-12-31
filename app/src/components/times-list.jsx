@@ -54,13 +54,14 @@ const TimesList = () => {
                     <option value = "TITLE_DESC"> Title [z-a]</option>                
                 </select>            
             </div>
-            <List gutter = {0}>
+            <List gutter = {0} >
                 {times.map((time) => 
-                <List.Item key = {time.id}>
-                <div>
-                    {time.title}
-                    <code> {time.time_seconds}  seconds</code>
-                </div>
+                <List.Item key = {time.id} style = {{display: 'flex', justifyContent: 'space-between'}}>
+                    <div>
+                        {time.title}
+                        <code> {time.time_seconds}  seconds</code>
+                    </div>
+                    <button> remove </button>
                 </List.Item>        
                 )}
             </List>
