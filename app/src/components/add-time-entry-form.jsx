@@ -1,9 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import firebase from '../firebase';
+import {useState} from 'reinspect';
 
 const AddTimeEntryForm = () => {
-    const [title, setTitle] = useState('');
-    const [time, setTime] = useState('')
+    const [title, setTitle] = useState('', 'Title State');
+    const [time, setTime] = useState('', 'TimeState');
 
     const onSubmit = (e) => {
         e.preventDefault();
