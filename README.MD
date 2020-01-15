@@ -1,7 +1,4 @@
-Based upon the `Baylor Breaks It Down` article <a `Firebase Tutorial With React Hooks` /> 
-
-
-
+Based upon the `Baylor Breaks It Down` video tutorial [Firebase Tutorial With React Hooks](https://youtu.be/rSgbYCdc4G0)
 
 1) ### Set up React app `yarn create react-app app`
 
